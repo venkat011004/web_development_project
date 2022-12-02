@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    display: inline-block;
+  }
+
+.line:hover {
+    cursor: pointer;
+}
+  .line::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 300ms;
+  }
+  
+  .line:hover::after {
+    width: 100%;
+
+    
+  }
+
+body{
+    background: url(data:image/jpeg;base64,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);
+    background-size: cover;
+}
+
+.navbar{
+    background-color: rgb(44, 44, 49);
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+  
+}
+.header-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+
+.header-right {
+    float: right;
+    align-items: center;
+    
+}
+.header-right > ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    font-family: montserrat;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 10px;
+    color: aliceblue;
+    
+    
+
+}
+
+ul>li{
+    margin-left: 20vh;
+    margin-right: 10px;
+    transition: text-decoration 3s;
+    
+    }    
+
+
+
+
+
+
+main .courses h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat;
+    text-decoration: underline;
+    
+}
+main .courses {
+    display: flex;
+    flex-direction: row;
+}
+
+main .work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+main .courses .work1 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    height: 400px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border-bottom:100px solid black;
+    position: relative;
+    margin-bottom: 10px;
+    background-image: url(https://cdn.dribbble.com/users/2216921/screenshots/5059599/ig-web-ui-preview-_1_.png);
+    background-position: center;
+
+    background-size: contain;
+   
+    
+
+}
+.courses .work1 .description{
+    height: 50px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-family: alfa slab one;
+    
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -70px;
+    margin-left: 18px;
+    
+    
+    
+
+}
+.courses .work2 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    height: 400px;
+    margin-left: 23px;
+    border-radius: 30px;
+    border-bottom:100px solid black;
+    position: relative;
+    margin-bottom: 10px;
+    background-image: url(https://media.gettyimages.com/id/1172713053/photo/in-this-photo-illustration-flipkart-app-can-be-seen-on-a-mobile-screen-kolkata-india-01.jpg?s=612x612&w=0&k=20&c=jBfUZ8fKmsHAXdGC3aQ_oRvHTBHCbyqFFohfOstGfv0=);
+
+
+}
+.courses .work2 .des2 {
+    height: 50px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-family: alfa slab one;
+    
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -70px;
+    margin-left: 18px;
+}
+
+.courses .work3  {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    height: 400px;
+    margin-left: 23px;
+    border-radius: 30px;
+    border-bottom:100px solid black;
+    position: relative;
+    margin-bottom: 10px;
+    background-image: url(https://media.designrush.com/inspiration_images/136768/conversions/_1524503075_233_Amazon-Website-Design-Homepage-mobile.jpg);
+}
+
+.courses .work3 .des3 {
+    height: 50px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-family: alfa slab one;
+    
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -70px;
+    margin-left: 18px;
+}
+.work4 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+    height: 400px;
+    margin-left: 23px;
+    border-radius: 30px;
+    border-bottom:100px solid black;
+    position: relative;
+    margin-bottom: 10px;
+    background-image: url(https://miro.medium.com/max/1400/0*BkhFf_MV3KXCJNdH);
+    background-position: center;
+    background-size: contain;
+}
+
+.work4 .des4 {
+    height: 50px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-family: alfa slab one;
+    
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -70px;
+    margin-left: 18px;
+}
+
+center h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ourteams{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.ourteams img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+.ourteams>span{
+    display: flex;
+    flex-direction: column;
+    font-family: montserrat;
+    font-weight: bold;
+}
+
+.ourteams .span .elon {
+    border: 2px solid black;
+}
+
+footer{
+    background-color:black ;
+    color: aliceblue;
+    height: 20px;
+    text-align: center;
+    font-family: montserrat;
+}
