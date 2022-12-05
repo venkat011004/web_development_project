@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.line {
+    display: inline-block;
+  }
+
+.line:hover {
+    cursor: pointer;
+}
+.line::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 300ms;
+  }
+  
+  .line:hover::after {
+    width: 100%;
+
+    
+  }
+
+body{
+   background-color: #a62b2b;
+}
+
+.navbar{
+    background-color: rgb(44, 44, 49);
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+  
+}
+.header-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.logo {
+    cursor: pointer;
+}
+
+
+.header-right {
+    float: right;
+    align-items: center;
+    
+}
+.header-right > ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    font-family: montserrat;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    
+    
+
+}
+
+ul>li{
+    margin-left: 20vh;
+    margin-right: 10px;
+    transition: text-decoration 3s;
+    
+}
+
+
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3BlbiUyMGJvb2t8ZW58MHx8MHx8&w=1000&q=80);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    isolation: isolate;
+
+}
+
+body::after {
+    content: '';
+    background: black;
+    z-index: -1;
+    inset: 0;
+    position: absolute;
+    opacity: 0.5;
+    
+
+}
+
+.sign_in_table {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    border: 2px solid rgba(255, 119, 0, 0.778);
+    border-radius: 20px;
+    margin-top: 125px;
+    font-family: montserrat;
+
+    padding: 30px;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(73, 76, 77);
+}
+
+.logo {
+    height: 75px;
+    margin-bottom: -80px;
+    opacity: 1.0;
+
+}
+
+.sign_in {
+    margin-left: 5%;
+    color: white;
+    margin-top: -3px;
+
+
+}
+
+.email {
+    margin-left: 5%;
+    color: black;
+    font-weight: bold;
+
+}
+
+#email_box {
+    width: 90%;
+    margin-left: 4.5%;
+    margin-right: 5%;
+    margin-top: -15px;
+    border-color: rgb(255, 145, 0);
+    border-top: rgb(73, 76, 77);
+    border-right: rgb(73, 76, 77);
+    border-left: rgb(73, 76, 77);
+    background-color: rgb(73, 76, 77);
+    color: aliceblue;
+}
+
+#email_box:focus {
+    background-color: rgb(73, 76, 77);
+    outline: none;
+    color: aliceblue;
+
+
+
+}
+
+.password {
+    margin-left: 5%;
+    color: black;
+    font-weight: bold;
+}
+
+#pass_box {
+    text-decoration: aliceblue;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: -15px;
+    border-color: rgb(255, 145, 0);
+    border-top: rgb(73, 76, 77);
+    border-right: rgb(73, 76, 77);
+    border-left: rgb(73, 76, 77);
+    background-color: rgb(73, 76, 77);
+    color: aliceblue;
+}
+
+#pass_box:focus {
+    background-color: rgb(73, 76, 77);
+    outline: none;
+    color: aliceblue;
+
+}
+
+.sign_in_button {
+    height: 36px;
+    width: 92%;
+    margin-left: 5%;
+    margin-top: 30px;
+
+
+    border-radius: 25px;
+    background-color: rgb(255, 166, 0);
+    font-family: montserrat;
+    font-weight: bold;
+
+}
+
+.sign_in_button:hover {
+
+
+    cursor: pointer;
+
+
+
+
+
+}
+
+.sign_in_button:active {
+    opacity: 0.7;
+}
+
+.aggrement {
+    margin-left: 5%;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+
+}
+
+.log_in_button {
+    height: 36px;
+    width: 92%;
+    margin-left: 5%;
+    margin-top: 7px;
+    margin-bottom: 2px;
+
+    border-radius: 25px;
+    background-color: rgb(255, 166, 0);
+    font-family: montserrat;
+    font-weight: bold;
+}
+
+.log_in_button:hover {
+    cursor: pointer;
+
+
+
+}
+
+.log_in_button:active {
+    opacity: 0.7;
+}
+
+.create_button {
+    height: 36px;
+    width: 92%;
+    margin-left: 5%;
+    margin-top: 2px;
+
+    border-radius: 25px;
+    background-color: rgb(255, 166, 0);
+    font-family: montserrat;
+    font-weight: bold;
+}
+
+.create_button:hover {
+
+    cursor: pointer;
+
+}
+
+.create_button:active {
+    opacity: 0.7;
+}

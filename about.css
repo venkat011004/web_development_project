@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    display: inline-block;
+  }
+
+.line:hover {
+    cursor: pointer;
+}
+.line::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 300ms;
+  }
+  
+  .line:hover::after {
+    width: 100%;
+
+    
+  }
+
+body{
+   background-color: black;
+   color: white;
+   font-family: montserrat;
+}
+
+.navbar{
+    background-color: rgb(44, 44, 49);
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+  
+}
+.header-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.logo {
+    cursor: pointer;
+}
+
+
+.header-right {
+    float: right;
+    align-items: center;
+    
+}
+.header-right > ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    font-family: montserrat;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    
+    
+
+}
+
+ul>li{
+    margin-left: 20vh;
+    margin-right: 10px;
+    transition: text-decoration 3s;
+    
+}
+
+
+.work h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+   
+    
+}
+.whydes {
+    line-height: 22px;
+    margin-left: 5px;
+}
+.purpose {
+    margin-left: 6px;
+    margin-top: 20px;
+}
+.purposedes {
+    margin-left: 5px;
+    line-height: 22px;
+}
+.why {
+    margin-left: 6px;
+    margin-top: 20px;
+}
+footer{
+    background-color:black ;
+    color: aliceblue;
+    height: 20px;
+    text-align: center;
+    font-family: montserrat;
+    margin-top: 600px;
+}

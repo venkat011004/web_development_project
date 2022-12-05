@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    display: inline-block;
+  }
+
+.line:hover {
+    cursor: pointer;
+}
+.line::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 300ms;
+  }
+  
+  .line:hover::after {
+    width: 100%;
+
+    
+  }
+
+body{
+   background-color: #a62b2b;
+}
+
+.navbar{
+    background-color: rgb(44, 44, 49);
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+  
+}
+.header-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.logo {
+    cursor: pointer;
+}
+
+
+.header-right {
+    float: right;
+    align-items: center;
+    
+}
+.header-right > ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    font-family: montserrat;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    
+    
+
+}
+
+ul>li{
+    margin-left: 20vh;
+    margin-right: 10px;
+    transition: text-decoration 3s;
+    
+}
+
+
+
+
+body{
+    background-color: black;
+    font: inherit;
+    color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    font-family: montserrat;
+  
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-us-mais{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: montserrat;
+    height: 100vh;
+    margin-top: 30px;
+    width: 70vw;
+   
+    
+}
+.contact-us-mais h1 {
+    font-family: poppins;
+    margin-top: 30px;
+}
+.contact-us-mais>*{
+    margin-left: 130px;
+
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 29vw;
+    justify-content: center;
+
+    margin-left: -50px;
+    margin-top: 40px;
+    color:#a8a8aa;
+}
+h1{
+    font-size: 7rem;
+    text-shadow: 1px 1px 3px blue;
+}
+.text1{
+    color: #a8a8aa;
+    margin-top: -30px;
+    margin-bottom: 100px;
+}
+.namearea,.massage,.emailarea{
+    width: 48%;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 2px solid aliceblue;
+    background-color: black;
+}
+.namearea,.massage,.emailarea:focus{
+    border:none;
+    border-bottom: 2px solid aliceblue;
+    background-color: black;
+    color: whitesmoke;
+
+}
+.buttom{
+    width: 48.6%;
+    height: 50px;
+    background-color: #5e6061;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 400;
+}
+.nametext,.emailtext,.massagetext{
+    size: 3rem;
+    color: #a8a8aa;
+
+
+}
+footer{
+    background-color:black ;
+    color: aliceblue;
+    height: 20px;
+    text-align: center;
+    font-family: montserrat;
+}
